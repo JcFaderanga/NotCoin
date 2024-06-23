@@ -9,6 +9,12 @@
     list-style: none;
     font-family: 'Poppins', sans-serif;
 }
+body{
+     background-color: #121212;
+}
+#box, .form-group{
+    background: #202020;
+}
 .button{
     padding: 10px 20px;
     }
