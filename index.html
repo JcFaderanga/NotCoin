@@ -7,11 +7,42 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
-<body class=" container flex justify-center items-center border m-auto h-screen">
-    <a href="https://t.me/BlumCryptoBot/app?startapp" class="link">
-        <div class="box">
-            BLUM
-        </div>
-    </a>
+<body id="container" class=" border m-auto h-auto">
+
+<script>
+
+var games = [
+    ["Blum", "https://t.me/BlumCryptoBot/app?startapp"],
+    ["Hamster Combat", "https://t.me/hamster_kOmbat_bot/start?startapp"],
+    ["TapSwap", "https://t.me/pixelversexyzbot?start"],
+    ["SEED", "https://t.me/seed_coin_bot/app?startapp"],
+    ["TAPTON", "https://t.me/TapTongamebot?start"],
+    ["Supermeow", "https://t.me/supermeow_vip_bot?start"],
+    ["Shuttle", "https://t.me/Shuttle_ton_bot?start"],
+    ["MemeFi", "https://t.me/memefi_coin_bot?start"],
+    ["Pepe", "https://t.me/pepekombat_bot/app?startapp"],
+    ["PocketFi", "https://t.me/pocketfi_bot/Mining?startapp"]
+];
+
+    var container = document.getElementById('container');
+  
+    function items(game, url){
+    var itemBox = 
+    `<div class="form-group border rounded-lg w-72 h-16 flex justify-center items-center m-auto mt-5">
+        <a href="${url}" class="link">
+            <div class="box">
+                ${game}
+            </div>
+    </div>`;  
+
+    return itemBox;
+   }  
+    for(i = 0; i<games.length; i++) container.innerHTML += items(games[i][0], games[i][1]);      
+    
+ 
+
+
+
+</script>
 </body>
 </html>
